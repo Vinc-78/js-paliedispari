@@ -59,3 +59,11 @@ btn.addEventListener("click", function () {
 
 
 });
+
+
+reset.addEventListener("click", function(){
+
+    parolaInserita.value=""
+
+    risposta.innerHTML=""
+});

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titolo</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <h1>Pari o Dispari</h1>
+
+        <h2>Scegli un numero tra 1 e 5 poi tra Pari o Dispari</h2>
+
+        
+        <label for="yournumber">Il tuo numero:</label>
+        <input type="text" id="yournumber" name="number">
+
+
+        <div class="pulsanti">
+
+            <button type="button" id="btnPari">Pari</button>
+
+            <button type="button" id="btnDispari">Dispari</button>
+
+        </div>
+
+        <div class="resoconto">
+
+            <div class="row">
+                <div class="element">
+                    <label>Numero Scelto</label>
+                    <div class="box numero-Scelto" ></div>
+                </div>
+
+
+                <div class="element">
+                    <label >Numero Estratto dal PC</label>
+                    <div class="box numero-PC"></div>
+                </div>
+                
+
+                <div class="element">
+                    <label >Somma</label>
+                    <div class="box somma"></div>
+                </div>
+                
+                <div class="element">
+                    <label >Segno</label>
+                    <div class="box sommaSegno"></div>
+                </div>
+                
+
+            </div>
+
+            <div class="row-esito">
+
+                <label style="text-decoration: underline;" >Risultato</label>
+                <div class="box risultato"></div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+    </main>
+
+
+
+
+
+    <script src="js/utility.js"></script>
+    <script src="jsBonus/script.js"></script>
+</body>
+
+</html>

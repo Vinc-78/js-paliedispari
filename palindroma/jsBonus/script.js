@@ -1,6 +1,8 @@
 
 let insertParola;
 
+
+
 const messOK = " la parola che hai inserito è palindroma :)"
 
 const messKO = " la parola che hai inserito NON è palindroma :("
@@ -10,20 +12,24 @@ let esito ="";
 
 function palindroma(insertParola) {
 
-    insertParola = parola.split('');
+    let myArray;
 
-    console.log(insertParola);
+    myArray = insertParola.split('');
 
-    insertParola = insertParola.reverse();
+   
 
-    console.log(insertParola);
+    myArray = myArray.reverse();
 
-    insertParola = insertParola.join('');
+    
 
-    console.log(insertParola);
+    myArray = myArray.join('');
 
-    if (insertParola === parola) { esito=messOK;}
+    
+
+    if (myArray === insertParola) { esito=messOK;}
     else { esito=messKO; }
+
+    console.log(esito);
 
     return esito;
 
@@ -32,3 +38,24 @@ function palindroma(insertParola) {
 
 
 // verificata che la funzione è ok sviluppo l'interfaccia per il DOM
+
+
+
+let parolaInserita =document.querySelector("[name='parola']");
+
+const risposta = document.querySelector(".esito");
+
+const btn = document.getElementById("btn");
+
+const reset = document.getElementById("reset");
+
+btn.addEventListener("click", function () { 
+
+    palindroma(parolaInserita.value) 
+
+
+    risposta.innerHTML=esito; 
+
+
+
+});

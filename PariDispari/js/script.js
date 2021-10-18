@@ -20,7 +20,7 @@ if ((pariDispari === "p") || (pariDispari === "d")) {
     if (pariDispari ==="p") { scelta="pari"}
     else {scelta="dispari"}
 
-    console.log(scelta); 
+    console.log("hai scelto",scelta); 
 
     let numeroUtente = prompt("Inserisci un numero da 1 a 5");
 
@@ -30,29 +30,25 @@ if ((pariDispari === "p") || (pariDispari === "d")) {
 
         alert("Non hai inserito un valore valido, premi CTR+R")
 
-    } else { console.log(numeroUtente);
+    } else { console.log("il tuo numero è",numeroUtente);
 
              let numeroPC=NumeroRandom(); 
 
-             console.log(numeroPC);
+             console.log("al pc è uscito",numeroPC);
 
              let risultato = Somma(numeroUtente, numeroPC);
 
-             console.log(risultato); 
+             console.log("la somma dei due numero è",risultato); 
 
              let verifica =isPari(risultato);
 
-             console.log(verifica);
+             console.log("la somma è ", verifica);
 
              let check=vincita(verifica);
              
-             console.log(check); 
+             if (check===1) { alert(`Hai scelto ${scelta}, giocato ${numeroUtente} al pc è uscito ${numeroPC}, la somma è ${risultato} quindi HAI VINTO !!! `)}
 
-             if (check===1) { alert(`Hai scelto ${scelta}, giocato ${numeroUtente}
-                             al pc è uscito ${numeroPC}, la somma è ${risultato} quindi HAI VINTO !!! `)}
-
-             else { alert(`Hai scelto ${scelta}, giocato ${numeroUtente}
-                           al pc è uscito ${numeroPC}, la somma è ${risultato} quindi Hai perso :( Ritenta `)}
+             else { alert(`Hai scelto ${scelta}, giocato ${numeroUtente} al pc è uscito ${numeroPC}, la somma è ${risultato} quindi Hai perso :( Ritenta `)}
 
 
     
